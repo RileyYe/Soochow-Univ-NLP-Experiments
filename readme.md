@@ -9,7 +9,20 @@ pip install -r ./requirements.txt
 ## Step2.1 Exp1-中文文本分词与词频统计
 ### 运行方式
 ```bash
-    cd ./Exp1-中文文本分词与词频统计
-    python3 ./main.py # Linux环境
-    python ./main.py # Windows 环境
+cd ./Exp1-中文文本分词与词频统计
+python3 ./main.py # Linux环境
+```
+
+## Step2.2 Exp2-借助开源TensorFlow工具的词向量训练
+### 运行方式
+```bash
+cd ./Exp2-借助开源TensorFlow工具的词向量训练
+tar -xf ./data.tar.gz
+python3 ./main.py # Linux环境
+```
+### 训练方式
+```bash
+cd ./Exp2-借助开源TensorFlow工具的词向量训练
+python3 ./dump_conf_dist.py
+python3 ./dump_top5.py
 ```
