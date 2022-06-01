@@ -20,7 +20,6 @@ def participle():
 
     for i in answer:
         f.writelines(' '.join(i)+"\n")
-
     f.close()
 
 def count_frequency():
@@ -47,7 +46,7 @@ def count_frequency():
     for i in answer:
         for j in i:
             if not filt_rules.match(j) and j not in stopwords:
-                if j not in answer:
+                if j not in answer_words:
                     answer_words[j] = 1
                 else:
                     answer_words[j] += 1
